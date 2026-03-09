@@ -62,6 +62,52 @@
     @apply relative;
   }
 
+  /* Top-bar navigation */
+  .nav-top-item {
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium cursor-pointer
+           text-gray-600 dark:text-gray-300 whitespace-nowrap
+           hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-150;
+  }
+
+  .nav-top-item.active {
+    @apply bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300;
+  }
+
+  .nav-top-btn {
+    @apply flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium cursor-pointer
+           text-gray-600 dark:text-gray-300 whitespace-nowrap
+           hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-150;
+  }
+
+  .nav-top-btn.active {
+    @apply text-indigo-600 dark:text-indigo-400;
+  }
+
+  .nav-dropdown {
+    @apply relative;
+  }
+
+  .nav-dropdown-menu {
+    @apply hidden absolute top-full left-0 min-w-48 py-1
+           bg-white dark:bg-gray-800
+           border border-gray-200 dark:border-gray-700
+           rounded-xl shadow-lg z-50;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu {
+    @apply block;
+  }
+
+  .nav-dropdown-item {
+    @apply flex items-center gap-2 px-4 py-2 text-sm cursor-pointer
+           text-gray-600 dark:text-gray-300
+           hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-150;
+  }
+
+  .nav-dropdown-item.active {
+    @apply text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-900/30;
+  }
+
   .home-card {
     @apply flex items-start gap-3 p-4 rounded-xl border border-gray-200 dark:border-gray-700
            bg-white dark:bg-gray-800 cursor-pointer

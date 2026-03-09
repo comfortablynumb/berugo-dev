@@ -7,39 +7,113 @@
   <link rel="stylesheet" href="dist/css/main.css" />
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 
-  <!-- Mobile overlay -->
-  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black/40 z-20 lg:hidden"></div>
+  <!-- Top bar -->
+  <header class="fixed top-0 inset-x-0 z-30 h-14 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+    <div class="flex items-center h-full px-4 gap-1">
 
-  <!-- Mobile hamburger -->
-  <button id="sidebar-toggle"
-    class="lg:hidden fixed top-3 left-3 z-50 p-2 rounded-lg
-           bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-           shadow hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
+      <!-- Logo -->
+      <span class="text-lg font-bold text-indigo-600 dark:text-indigo-400 mr-3 shrink-0">berugo.dev</span>
 
-  <!-- Sidebar -->
-  <aside id="sidebar"
-    class="fixed lg:static inset-y-0 left-0 z-30 w-60 flex flex-col
-           bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700
-           transform -translate-x-full lg:translate-x-0 transition-transform duration-200">
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-0.5 flex-1">
 
-    <!-- Logo + theme toggle -->
-    <div class="flex items-center justify-between px-4 py-4 border-b border-gray-200 dark:border-gray-700">
-      <span class="text-xl font-bold text-indigo-600 dark:text-indigo-400">berugo.dev</span>
+        <div class="nav-top-item" data-tool="home">🏠 Home</div>
+
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Encoding
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="base64"><span>🔤</span> Base64</div>
+            <div class="nav-dropdown-item" data-tool="url-codec"><span>🔗</span> URL Codec</div>
+            <div class="nav-dropdown-item" data-tool="html-entities"><span>🏷️</span> HTML Entities</div>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Crypto
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="hash"><span>#️⃣</span> Hash Generator</div>
+            <div class="nav-dropdown-item" data-tool="jwt-decoder"><span>🔍</span> JWT Decoder</div>
+            <div class="nav-dropdown-item" data-tool="jwt-verifier"><span>✅</span> JWT Verifier</div>
+            <div class="nav-dropdown-item" data-tool="jwt-generator"><span>✏️</span> JWT Generator</div>
+            <div class="nav-dropdown-item" data-tool="jwks"><span>🔑</span> JWKS Generator</div>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Format
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="json-formatter"><span>📋</span> JSON Formatter</div>
+            <div class="nav-dropdown-item" data-tool="csv-json"><span>📊</span> CSV ↔ JSON</div>
+            <div class="nav-dropdown-item" data-tool="number-base"><span>🔢</span> Number Base</div>
+            <div class="nav-dropdown-item" data-tool="color"><span>🎨</span> Color Converter</div>
+            <div class="nav-dropdown-item" data-tool="string-case"><span>Aa</span> String Case</div>
+          </div>
+        </div>
+
+        <div class="nav-top-item" data-tool="url-parser">🌐 URL Parser</div>
+
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Generators
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="uuid"><span>🆔</span> UUID Generator</div>
+            <div class="nav-dropdown-item" data-tool="timestamp"><span>🕐</span> Timestamp</div>
+            <div class="nav-dropdown-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
+            <div class="nav-dropdown-item" data-tool="password"><span>🔐</span> Password</div>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Text
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
+            <div class="nav-dropdown-item" data-tool="diff"><span>↔️</span> Diff</div>
+          </div>
+        </div>
+
+      </nav>
+
+      <span class="flex-1 lg:hidden"></span>
+
+      <!-- Theme toggle -->
       <button id="theme-toggle"
-        class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-base"
+        class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
         title="Toggle dark/light mode">
         <span id="theme-icon">🌙</span>
       </button>
+
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn"
+        class="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ml-1">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
     </div>
+  </header>
 
-    <nav class="flex-1 overflow-y-auto p-3 space-y-1">
-
+  <!-- Mobile menu -->
+  <div id="mobile-menu"
+    class="hidden fixed top-14 inset-x-0 z-20 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700
+           overflow-y-auto shadow-lg max-h-[calc(100vh-3.5rem)]">
+    <div class="p-3 space-y-1">
       <div class="nav-item" data-tool="home"><span>🏠</span> Home</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Encoding / Decoding</p>
@@ -73,18 +147,15 @@
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Text</p>
       <div class="nav-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
       <div class="nav-item" data-tool="diff"><span>↔️</span> Diff</div>
-
-    </nav>
-  </aside>
+    </div>
+  </div>
 
   <!-- Main -->
-  <div class="flex-1 flex flex-col min-w-0">
-    <main class="flex-1 overflow-y-auto p-6 pt-14 lg:pt-6">
+  <main class="pt-20 p-6">
 
       <!-- Home -->
       <section id="panel-home" class="tool-panel max-w-4xl">
         <div class="mb-8">
-          <h1 class="text-3xl font-bold mb-2 text-indigo-600 dark:text-indigo-400">berugo.dev</h1>
           <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
             Browser-based developer tools. Everything runs locally in your browser —
             no data is ever sent to a server.
@@ -764,7 +835,6 @@
       </section>
 
     </main>
-  </div>
 
   <script type="module" src="src/js/app.js"></script>
 </body>
