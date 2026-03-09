@@ -36,10 +36,9 @@ jobs:
       - name: Prepare pages artifact
         run: |
           mkdir -p _site/dist/css
-          mkdir -p _site/src/js
           cp index.html _site/
-          cp -r dist/css/main.css _site/dist/css/
-          cp -r src/js/ _site/src/js/
+          cp -r src _site/src
+          cp dist/css/main.css _site/dist/css/main.css
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
