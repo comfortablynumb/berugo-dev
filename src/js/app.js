@@ -5,12 +5,17 @@ import { initJwt } from './tools/jwt.js';
 import { initJwks } from './tools/jwks.js';
 import { initHash } from './tools/hash.js';
 import { initJsonFormatter } from './tools/json-formatter.js';
+import { initCsvJson } from './tools/csv-json.js';
 import { initNumberBase } from './tools/number-base.js';
 import { initColorConverter } from './tools/color-converter.js';
 import { initStringCase } from './tools/string-case.js';
+import { initUrlParser } from './tools/url-parser.js';
 import { initUuid } from './tools/uuid.js';
 import { initTimestamp } from './tools/timestamp.js';
+import { initLorem } from './tools/lorem.js';
+import { initPassword } from './tools/password.js';
 import { initRegex } from './tools/regex.js';
+import { initDiff } from './tools/diff.js';
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
@@ -82,12 +87,17 @@ $(document).ready(() => {
   initJwks();
   initHash();
   initJsonFormatter();
+  initCsvJson();
   initNumberBase();
   initColorConverter();
   initStringCase();
+  initUrlParser();
   initUuid();
   initTimestamp();
+  initLorem();
+  initPassword();
   initRegex();
+  initDiff();
 
   const saved = localStorage.getItem('activeTool') || 'home';
   activateTool(saved);

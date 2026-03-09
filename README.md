@@ -24,20 +24,29 @@ Browser-based developer tools SPA. No backend — everything runs in the browser
 | Tool | Description |
 |------|-------------|
 | **JSON Formatter** | Format, validate, and minify JSON |
+| **CSV ↔ JSON** | Convert between CSV and JSON array of objects |
 | **Number Base** | Convert between binary, octal, decimal, and hex (live) |
 | **Color Converter** | Convert between HEX, RGB, and HSL (live) |
 | **String Case** | camelCase, PascalCase, snake_case, kebab-case, UPPER_SNAKE, Title Case |
+
+### Network
+| Tool | Description |
+|------|-------------|
+| **URL Parser** | Break a URL into protocol, host, path, port, query params, hash |
 
 ### Generators
 | Tool | Description |
 |------|-------------|
 | **UUID Generator** | Generate v4 UUIDs in bulk (1–100) |
 | **Timestamp Converter** | Unix timestamp (s/ms) or date string → UTC / ISO / local |
+| **Lorem Ipsum** | Generate placeholder words, sentences, or paragraphs |
+| **Password Generator** | Cryptographically secure passwords with custom character sets |
 
 ### Text
 | Tool | Description |
 |------|-------------|
 | **Regex Tester** | Test regex patterns with live match inspection and group capture |
+| **Diff** | Compare two texts line by line, highlight additions and removals |
 
 ## Tech Stack
 
@@ -113,9 +122,13 @@ berugo-dev/
 │           ├── number-base.js
 │           ├── color-converter.js
 │           ├── string-case.js
+│           ├── url-parser.js
 │           ├── uuid.js
 │           ├── timestamp.js
-│           └── regex.js
+│           ├── lorem.js
+│           ├── password.js
+│           ├── regex.js
+│           └── diff.js
 ├── dist/css/main.css     (generated)
 ├── package.json
 ├── tailwind.config.js

@@ -40,74 +40,39 @@
 
     <nav class="flex-1 overflow-y-auto p-3 space-y-1">
 
-      <div class="nav-item" data-tool="home">
-        <span>🏠</span> Home
-      </div>
+      <div class="nav-item" data-tool="home"><span>🏠</span> Home</div>
 
-      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-        Encoding / Decoding
-      </p>
-      <div class="nav-item" data-tool="base64">
-        <span>🔤</span> Base64
-      </div>
-      <div class="nav-item" data-tool="url-codec">
-        <span>🔗</span> URL Codec
-      </div>
-      <div class="nav-item" data-tool="html-entities">
-        <span>🏷️</span> HTML Entities
-      </div>
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Encoding / Decoding</p>
+      <div class="nav-item" data-tool="base64"><span>🔤</span> Base64</div>
+      <div class="nav-item" data-tool="url-codec"><span>🔗</span> URL Codec</div>
+      <div class="nav-item" data-tool="html-entities"><span>🏷️</span> HTML Entities</div>
 
-      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-        Crypto &amp; Security
-      </p>
-      <div class="nav-item" data-tool="hash">
-        <span>#️⃣</span> Hash Generator
-      </div>
-      <div class="nav-item" data-tool="jwt-decoder">
-        <span>🔍</span> JWT Decoder
-      </div>
-      <div class="nav-item" data-tool="jwt-verifier">
-        <span>✅</span> JWT Verifier
-      </div>
-      <div class="nav-item" data-tool="jwt-generator">
-        <span>✏️</span> JWT Generator
-      </div>
-      <div class="nav-item" data-tool="jwks">
-        <span>🔑</span> JWKS Generator
-      </div>
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Crypto &amp; Security</p>
+      <div class="nav-item" data-tool="hash"><span>#️⃣</span> Hash Generator</div>
+      <div class="nav-item" data-tool="jwt-decoder"><span>🔍</span> JWT Decoder</div>
+      <div class="nav-item" data-tool="jwt-verifier"><span>✅</span> JWT Verifier</div>
+      <div class="nav-item" data-tool="jwt-generator"><span>✏️</span> JWT Generator</div>
+      <div class="nav-item" data-tool="jwks"><span>🔑</span> JWKS Generator</div>
 
-      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-        Format &amp; Transform
-      </p>
-      <div class="nav-item" data-tool="json-formatter">
-        <span>📋</span> JSON Formatter
-      </div>
-      <div class="nav-item" data-tool="number-base">
-        <span>🔢</span> Number Base
-      </div>
-      <div class="nav-item" data-tool="color">
-        <span>🎨</span> Color Converter
-      </div>
-      <div class="nav-item" data-tool="string-case">
-        <span>Aa</span> String Case
-      </div>
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Format &amp; Transform</p>
+      <div class="nav-item" data-tool="json-formatter"><span>📋</span> JSON Formatter</div>
+      <div class="nav-item" data-tool="csv-json"><span>📊</span> CSV ↔ JSON</div>
+      <div class="nav-item" data-tool="number-base"><span>🔢</span> Number Base</div>
+      <div class="nav-item" data-tool="color"><span>🎨</span> Color Converter</div>
+      <div class="nav-item" data-tool="string-case"><span>Aa</span> String Case</div>
 
-      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-        Generators
-      </p>
-      <div class="nav-item" data-tool="uuid">
-        <span>🆔</span> UUID Generator
-      </div>
-      <div class="nav-item" data-tool="timestamp">
-        <span>🕐</span> Timestamp
-      </div>
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Network</p>
+      <div class="nav-item" data-tool="url-parser"><span>🌐</span> URL Parser</div>
 
-      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-        Text
-      </p>
-      <div class="nav-item" data-tool="regex">
-        <span>🔎</span> Regex Tester
-      </div>
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Generators</p>
+      <div class="nav-item" data-tool="uuid"><span>🆔</span> UUID Generator</div>
+      <div class="nav-item" data-tool="timestamp"><span>🕐</span> Timestamp</div>
+      <div class="nav-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
+      <div class="nav-item" data-tool="password"><span>🔐</span> Password</div>
+
+      <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Text</p>
+      <div class="nav-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
+      <div class="nav-item" data-tool="diff"><span>↔️</span> Diff</div>
 
     </nav>
   </aside>
@@ -131,135 +96,56 @@
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Encoding / Decoding</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="home-card" data-tool="base64">
-                <span class="text-2xl">🔤</span>
-                <div>
-                  <p class="font-semibold text-sm">Base64</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode UTF-8 safe Base64</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="url-codec">
-                <span class="text-2xl">🔗</span>
-                <div>
-                  <p class="font-semibold text-sm">URL Codec</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode URL components</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="html-entities">
-                <span class="text-2xl">🏷️</span>
-                <div>
-                  <p class="font-semibold text-sm">HTML Entities</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode HTML entities</p>
-                </div>
-              </div>
+              <div class="home-card" data-tool="base64"><span class="text-2xl">🔤</span><div><p class="font-semibold text-sm">Base64</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode UTF-8 safe Base64</p></div></div>
+              <div class="home-card" data-tool="url-codec"><span class="text-2xl">🔗</span><div><p class="font-semibold text-sm">URL Codec</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode URL components</p></div></div>
+              <div class="home-card" data-tool="html-entities"><span class="text-2xl">🏷️</span><div><p class="font-semibold text-sm">HTML Entities</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode HTML entities</p></div></div>
             </div>
           </div>
 
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Crypto &amp; Security</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="home-card" data-tool="hash">
-                <span class="text-2xl">#️⃣</span>
-                <div>
-                  <p class="font-semibold text-sm">Hash Generator</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">SHA-1, SHA-256, SHA-384, SHA-512</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="jwt-decoder">
-                <span class="text-2xl">🔍</span>
-                <div>
-                  <p class="font-semibold text-sm">JWT Decoder</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Inspect header and payload without verification</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="jwt-verifier">
-                <span class="text-2xl">✅</span>
-                <div>
-                  <p class="font-semibold text-sm">JWT Verifier</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Verify JWT signature with HMAC or RSA/EC key</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="jwt-generator">
-                <span class="text-2xl">✏️</span>
-                <div>
-                  <p class="font-semibold text-sm">JWT Generator</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Build and sign JWTs with custom claims</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="jwks">
-                <span class="text-2xl">🔑</span>
-                <div>
-                  <p class="font-semibold text-sm">JWKS Generator</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Generate RSA-2048 or EC P-256 key pairs</p>
-                </div>
-              </div>
+              <div class="home-card" data-tool="hash"><span class="text-2xl">#️⃣</span><div><p class="font-semibold text-sm">Hash Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">SHA-1, SHA-256, SHA-384, SHA-512</p></div></div>
+              <div class="home-card" data-tool="jwt-decoder"><span class="text-2xl">🔍</span><div><p class="font-semibold text-sm">JWT Decoder</p><p class="text-xs text-gray-500 dark:text-gray-400">Inspect header and payload without verification</p></div></div>
+              <div class="home-card" data-tool="jwt-verifier"><span class="text-2xl">✅</span><div><p class="font-semibold text-sm">JWT Verifier</p><p class="text-xs text-gray-500 dark:text-gray-400">Verify JWT signature with HMAC or RSA/EC key</p></div></div>
+              <div class="home-card" data-tool="jwt-generator"><span class="text-2xl">✏️</span><div><p class="font-semibold text-sm">JWT Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Build and sign JWTs with custom claims</p></div></div>
+              <div class="home-card" data-tool="jwks"><span class="text-2xl">🔑</span><div><p class="font-semibold text-sm">JWKS Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate RSA-2048 or EC P-256 key pairs</p></div></div>
             </div>
           </div>
 
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Format &amp; Transform</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="home-card" data-tool="json-formatter">
-                <span class="text-2xl">📋</span>
-                <div>
-                  <p class="font-semibold text-sm">JSON Formatter</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Format, validate, and minify JSON</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="number-base">
-                <span class="text-2xl">🔢</span>
-                <div>
-                  <p class="font-semibold text-sm">Number Base</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Convert between binary, octal, decimal, hex</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="color">
-                <span class="text-2xl">🎨</span>
-                <div>
-                  <p class="font-semibold text-sm">Color Converter</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Convert between HEX, RGB, and HSL</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="string-case">
-                <span class="text-2xl">Aa</span>
-                <div>
-                  <p class="font-semibold text-sm">String Case</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">camelCase, snake_case, kebab-case and more</p>
-                </div>
-              </div>
+              <div class="home-card" data-tool="json-formatter"><span class="text-2xl">📋</span><div><p class="font-semibold text-sm">JSON Formatter</p><p class="text-xs text-gray-500 dark:text-gray-400">Format, validate, and minify JSON</p></div></div>
+              <div class="home-card" data-tool="csv-json"><span class="text-2xl">📊</span><div><p class="font-semibold text-sm">CSV ↔ JSON</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between CSV and JSON formats</p></div></div>
+              <div class="home-card" data-tool="number-base"><span class="text-2xl">🔢</span><div><p class="font-semibold text-sm">Number Base</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between binary, octal, decimal, hex</p></div></div>
+              <div class="home-card" data-tool="color"><span class="text-2xl">🎨</span><div><p class="font-semibold text-sm">Color Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between HEX, RGB, and HSL</p></div></div>
+              <div class="home-card" data-tool="string-case"><span class="text-2xl">Aa</span><div><p class="font-semibold text-sm">String Case</p><p class="text-xs text-gray-500 dark:text-gray-400">camelCase, snake_case, kebab-case and more</p></div></div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Network</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="home-card" data-tool="url-parser"><span class="text-2xl">🌐</span><div><p class="font-semibold text-sm">URL Parser</p><p class="text-xs text-gray-500 dark:text-gray-400">Break a URL into protocol, host, path, params</p></div></div>
             </div>
           </div>
 
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Generators</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="home-card" data-tool="uuid">
-                <span class="text-2xl">🆔</span>
-                <div>
-                  <p class="font-semibold text-sm">UUID Generator</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Generate v4 UUIDs in bulk</p>
-                </div>
-              </div>
-              <div class="home-card" data-tool="timestamp">
-                <span class="text-2xl">🕐</span>
-                <div>
-                  <p class="font-semibold text-sm">Timestamp Converter</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Unix timestamp ↔ human-readable date</p>
-                </div>
-              </div>
+              <div class="home-card" data-tool="uuid"><span class="text-2xl">🆔</span><div><p class="font-semibold text-sm">UUID Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate v4 UUIDs in bulk</p></div></div>
+              <div class="home-card" data-tool="timestamp"><span class="text-2xl">🕐</span><div><p class="font-semibold text-sm">Timestamp Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Unix timestamp ↔ human-readable date</p></div></div>
+              <div class="home-card" data-tool="lorem"><span class="text-2xl">📝</span><div><p class="font-semibold text-sm">Lorem Ipsum</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate placeholder words, sentences, paragraphs</p></div></div>
+              <div class="home-card" data-tool="password"><span class="text-2xl">🔐</span><div><p class="font-semibold text-sm">Password Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Secure random passwords with custom character sets</p></div></div>
             </div>
           </div>
 
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Text</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="home-card" data-tool="regex">
-                <span class="text-2xl">🔎</span>
-                <div>
-                  <p class="font-semibold text-sm">Regex Tester</p>
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Test regular expressions with live match results</p>
-                </div>
-              </div>
+              <div class="home-card" data-tool="regex"><span class="text-2xl">🔎</span><div><p class="font-semibold text-sm">Regex Tester</p><p class="text-xs text-gray-500 dark:text-gray-400">Test regular expressions with live match results</p></div></div>
+              <div class="home-card" data-tool="diff"><span class="text-2xl">↔️</span><div><p class="font-semibold text-sm">Diff</p><p class="text-xs text-gray-500 dark:text-gray-400">Compare two texts and highlight changes line by line</p></div></div>
             </div>
           </div>
 
@@ -348,10 +234,7 @@
         <div class="space-y-4">
           <div>
             <label class="label" for="hash-algorithm">Algorithm</label>
-            <select id="hash-algorithm"
-              class="w-full rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select id="hash-algorithm" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
               <option value="SHA-1">SHA-1</option>
               <option value="SHA-256" selected>SHA-256</option>
               <option value="SHA-384">SHA-384</option>
@@ -392,18 +275,14 @@
           <div id="jwt-decode-result" class="hidden space-y-4">
             <div>
               <p class="label">Header</p>
-              <pre id="jwt-decode-header"
-                class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-                       p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
+              <pre id="jwt-decode-header" class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
             </div>
             <div>
               <div class="flex items-center justify-between mb-1">
                 <p class="label mb-0">Payload</p>
                 <button id="jwt-decode-copy-payload" class="btn-copy">Copy JSON</button>
               </div>
-              <pre id="jwt-decode-payload"
-                class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-                       p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
+              <pre id="jwt-decode-payload" class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
             </div>
           </div>
         </div>
@@ -420,8 +299,7 @@
           </div>
           <div>
             <label class="label" for="jwt-verify-key">Key / Secret</label>
-            <textarea id="jwt-verify-key" class="tool-textarea" rows="5"
-              placeholder="HMAC: your secret string&#10;RSA/EC: PEM public key or JWK JSON"></textarea>
+            <textarea id="jwt-verify-key" class="tool-textarea" rows="5" placeholder="HMAC: your secret string&#10;RSA/EC: PEM public key or JWK JSON"></textarea>
           </div>
           <div class="flex gap-2">
             <button id="jwt-verify-btn" class="btn-primary">Verify</button>
@@ -431,9 +309,7 @@
             <div id="jwt-verify-status"></div>
             <div>
               <p class="label">Verified Payload</p>
-              <pre id="jwt-verify-payload"
-                class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-                       p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
+              <pre id="jwt-verify-payload" class="rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-all"></pre>
             </div>
           </div>
         </div>
@@ -446,10 +322,7 @@
         <div class="space-y-4">
           <div>
             <label class="label" for="jwt-generate-alg">Algorithm</label>
-            <select id="jwt-generate-alg"
-              class="w-full rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select id="jwt-generate-alg" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
               <option value="HS256">HS256 (HMAC SHA-256)</option>
               <option value="HS384">HS384 (HMAC SHA-384)</option>
               <option value="HS512">HS512 (HMAC SHA-512)</option>
@@ -462,13 +335,11 @@
           </div>
           <div>
             <label class="label" for="jwt-generate-key">Signing Key / Secret</label>
-            <textarea id="jwt-generate-key" class="tool-textarea" rows="5"
-              placeholder="HMAC: your secret string&#10;RSA/EC: PEM private key or JWK JSON"></textarea>
+            <textarea id="jwt-generate-key" class="tool-textarea" rows="5" placeholder="HMAC: your secret string&#10;RSA/EC: PEM private key or JWK JSON"></textarea>
           </div>
           <div>
             <label class="label" for="jwt-generate-payload">Payload (JSON)</label>
-            <textarea id="jwt-generate-payload" class="tool-textarea" rows="6"
-              placeholder='{"sub": "user123", "iat": 1700000000}'></textarea>
+            <textarea id="jwt-generate-payload" class="tool-textarea" rows="6" placeholder='{"sub": "user123", "iat": 1700000000}'></textarea>
           </div>
           <div class="flex gap-2">
             <button id="jwt-generate-btn" class="btn-primary">Generate JWT</button>
@@ -491,10 +362,7 @@
         <div class="space-y-4">
           <div>
             <label class="label" for="jwks-key-type">Key Type</label>
-            <select id="jwks-key-type"
-              class="w-full rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select id="jwks-key-type" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
               <option value="RSA">RSA-2048 (RS256)</option>
               <option value="EC">EC P-256 (ES256)</option>
             </select>
@@ -547,41 +415,59 @@
         </div>
       </section>
 
+      <!-- CSV ↔ JSON -->
+      <section id="panel-csv-json" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">CSV ↔ JSON</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between CSV (first row as headers) and a JSON array of objects.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="csv-json-input">Input</label>
+            <textarea id="csv-json-input" class="tool-textarea" rows="10"
+              placeholder="CSV example:&#10;name,age,city&#10;Alice,30,London&#10;Bob,25,Paris"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="csv-to-json-btn" class="btn-primary">CSV → JSON</button>
+            <button id="json-to-csv-btn" class="btn-primary">JSON → CSV</button>
+            <button id="csv-json-clear-btn" class="btn-secondary">Clear</button>
+          </div>
+          <p id="csv-json-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="csv-json-output">Output</label>
+              <button id="csv-json-copy-btn" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="csv-json-output" class="tool-textarea" rows="12" readonly placeholder="Result will appear here..."></textarea>
+          </div>
+        </div>
+      </section>
+
       <!-- Number Base Converter -->
       <section id="panel-number-base" class="tool-panel max-w-2xl">
         <h1 class="text-2xl font-bold mb-1">Number Base Converter</h1>
-        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">
-          Convert between binary, octal, decimal, and hexadecimal. Edit any field to update the rest.
-        </p>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between binary, octal, decimal, and hexadecimal. Edit any field to update the rest.</p>
         <div class="space-y-3">
           <p id="nb-error" class="error-text hidden"></p>
-
           <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden divide-y divide-gray-200 dark:divide-gray-700">
-
             <div class="flex items-center gap-3 px-4 py-3">
               <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Binary <span class="text-xs text-gray-400">base 2</span></span>
               <input id="nb-bin" type="text" class="tool-input font-mono" placeholder="1010" autocomplete="off" />
               <button id="nb-bin-copy" class="btn-copy shrink-0">Copy</button>
             </div>
-
             <div class="flex items-center gap-3 px-4 py-3">
               <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Octal <span class="text-xs text-gray-400">base 8</span></span>
               <input id="nb-oct" type="text" class="tool-input font-mono" placeholder="17" autocomplete="off" />
               <button id="nb-oct-copy" class="btn-copy shrink-0">Copy</button>
             </div>
-
             <div class="flex items-center gap-3 px-4 py-3">
               <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Decimal <span class="text-xs text-gray-400">base 10</span></span>
               <input id="nb-dec" type="text" class="tool-input font-mono" placeholder="255" autocomplete="off" />
               <button id="nb-dec-copy" class="btn-copy shrink-0">Copy</button>
             </div>
-
             <div class="flex items-center gap-3 px-4 py-3">
               <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Hex <span class="text-xs text-gray-400">base 16</span></span>
               <input id="nb-hex" type="text" class="tool-input font-mono" placeholder="FF" autocomplete="off" />
               <button id="nb-hex-copy" class="btn-copy shrink-0">Copy</button>
             </div>
-
           </div>
         </div>
       </section>
@@ -591,8 +477,6 @@
         <h1 class="text-2xl font-bold mb-1">Color Converter</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert colors between HEX, RGB, and HSL. Edit any field to update the rest.</p>
         <div class="space-y-5">
-
-          <!-- Swatch + picker -->
           <div class="flex items-center gap-4">
             <div id="color-swatch" class="w-16 h-16 rounded-xl border border-gray-200 dark:border-gray-700 shadow-inner"></div>
             <div>
@@ -600,8 +484,6 @@
               <input type="color" id="color-picker" class="block h-9 w-20 cursor-pointer rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 p-1" />
             </div>
           </div>
-
-          <!-- HEX -->
           <div>
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0">HEX</label>
@@ -609,51 +491,28 @@
             </div>
             <input id="color-hex" type="text" class="tool-input font-mono" placeholder="#6366f1" maxlength="7" />
           </div>
-
-          <!-- RGB -->
           <div>
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0">RGB</label>
               <button id="color-copy-rgb" class="btn-copy">Copy rgb()</button>
             </div>
             <div class="grid grid-cols-3 gap-2">
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">R (0–255)</label>
-                <input id="color-r" type="number" min="0" max="255" class="tool-input font-mono" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">G (0–255)</label>
-                <input id="color-g" type="number" min="0" max="255" class="tool-input font-mono" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">B (0–255)</label>
-                <input id="color-b" type="number" min="0" max="255" class="tool-input font-mono" />
-              </div>
+              <div><label class="text-xs text-gray-400 mb-1 block">R (0–255)</label><input id="color-r" type="number" min="0" max="255" class="tool-input font-mono" /></div>
+              <div><label class="text-xs text-gray-400 mb-1 block">G (0–255)</label><input id="color-g" type="number" min="0" max="255" class="tool-input font-mono" /></div>
+              <div><label class="text-xs text-gray-400 mb-1 block">B (0–255)</label><input id="color-b" type="number" min="0" max="255" class="tool-input font-mono" /></div>
             </div>
           </div>
-
-          <!-- HSL -->
           <div>
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0">HSL</label>
               <button id="color-copy-hsl" class="btn-copy">Copy hsl()</button>
             </div>
             <div class="grid grid-cols-3 gap-2">
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">H (0–360°)</label>
-                <input id="color-h" type="number" min="0" max="360" class="tool-input font-mono" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">S (0–100%)</label>
-                <input id="color-s" type="number" min="0" max="100" class="tool-input font-mono" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-400 mb-1 block">L (0–100%)</label>
-                <input id="color-l" type="number" min="0" max="100" class="tool-input font-mono" />
-              </div>
+              <div><label class="text-xs text-gray-400 mb-1 block">H (0–360°)</label><input id="color-h" type="number" min="0" max="360" class="tool-input font-mono" /></div>
+              <div><label class="text-xs text-gray-400 mb-1 block">S (0–100%)</label><input id="color-s" type="number" min="0" max="100" class="tool-input font-mono" /></div>
+              <div><label class="text-xs text-gray-400 mb-1 block">L (0–100%)</label><input id="color-l" type="number" min="0" max="100" class="tool-input font-mono" /></div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -667,49 +526,47 @@
             <input id="case-input" type="text" class="tool-input" placeholder="hello world foo bar" />
           </div>
           <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden divide-y divide-gray-200 dark:divide-gray-700">
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">camelCase</span><input id="case-camel" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-camel-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">PascalCase</span><input id="case-pascal" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-pascal-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">snake_case</span><input id="case-snake" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-snake-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">kebab-case</span><input id="case-kebab" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-kebab-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">UPPER_SNAKE</span><input id="case-upper-snake" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-upper-snake-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">Title Case</span><input id="case-title" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-title-copy" class="btn-copy shrink-0">Copy</button></div>
+            <div class="flex items-center gap-3 px-4 py-3"><span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">lowercase</span><input id="case-lower" type="text" class="tool-input font-mono text-sm" readonly /><button id="case-lower-copy" class="btn-copy shrink-0">Copy</button></div>
+          </div>
+        </div>
+      </section>
 
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">camelCase</span>
-              <input id="case-camel" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-camel-copy" class="btn-copy shrink-0">Copy</button>
+      <!-- URL Parser -->
+      <section id="panel-url-parser" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">URL Parser</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Break a URL into its components and inspect query parameters.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="urlp-input">URL</label>
+            <input id="urlp-input" type="text" class="tool-input font-mono"
+              placeholder="https://example.com:8080/path?foo=bar&baz=qux#section" />
+          </div>
+          <div class="flex gap-2">
+            <button id="urlp-btn" class="btn-primary">Parse</button>
+          </div>
+          <p id="urlp-error" class="error-text hidden"></p>
+          <div id="urlp-result" class="hidden space-y-4">
+            <div>
+              <p class="label mb-2">Components</p>
+              <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+                <table class="w-full"><tbody id="urlp-components"></tbody></table>
+              </div>
             </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">PascalCase</span>
-              <input id="case-pascal" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-pascal-copy" class="btn-copy shrink-0">Copy</button>
+            <div>
+              <p class="label mb-2">Query parameters</p>
+              <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+                <table class="w-full">
+                  <thead><tr class="bg-gray-50 dark:bg-gray-700/50 text-xs font-semibold text-gray-500 dark:text-gray-400"><th class="px-4 py-2 text-left">Key</th><th class="px-4 py-2 text-left">Value</th></tr></thead>
+                  <tbody id="urlp-params"></tbody>
+                </table>
+              </div>
             </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">snake_case</span>
-              <input id="case-snake" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-snake-copy" class="btn-copy shrink-0">Copy</button>
-            </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">kebab-case</span>
-              <input id="case-kebab" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-kebab-copy" class="btn-copy shrink-0">Copy</button>
-            </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">UPPER_SNAKE</span>
-              <input id="case-upper-snake" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-upper-snake-copy" class="btn-copy shrink-0">Copy</button>
-            </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">Title Case</span>
-              <input id="case-title" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-title-copy" class="btn-copy shrink-0">Copy</button>
-            </div>
-
-            <div class="flex items-center gap-3 px-4 py-3">
-              <span class="w-28 text-xs font-medium text-gray-400 shrink-0 font-mono">lowercase</span>
-              <input id="case-lower" type="text" class="tool-input font-mono text-sm" readonly />
-              <button id="case-lower-copy" class="btn-copy shrink-0">Copy</button>
-            </div>
-
           </div>
         </div>
       </section>
@@ -722,9 +579,7 @@
           <div>
             <label class="label" for="uuid-count">Count (1–100)</label>
             <input id="uuid-count" type="number" min="1" max="100" value="1"
-              class="w-32 rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              class="w-32 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           </div>
           <div class="flex gap-2">
             <button id="uuid-generate-btn" class="btn-primary">Generate</button>
@@ -747,9 +602,7 @@
           <div>
             <label class="label" for="ts-input">Unix timestamp or date string</label>
             <input id="ts-input" type="text"
-              class="w-full rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               placeholder="e.g. 1700000000 or 2024-01-15T10:30:00Z" />
           </div>
           <div class="flex flex-wrap gap-2">
@@ -759,27 +612,90 @@
           <p id="ts-error" class="error-text hidden"></p>
           <div id="ts-result" class="hidden">
             <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden divide-y divide-gray-200 dark:divide-gray-700">
-              <div class="flex gap-4 px-4 py-3">
-                <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Unix (s)</span>
-                <span id="ts-unix-s" class="font-mono text-sm"></span>
-              </div>
-              <div class="flex gap-4 px-4 py-3">
-                <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Unix (ms)</span>
-                <span id="ts-unix-ms" class="font-mono text-sm"></span>
-              </div>
-              <div class="flex gap-4 px-4 py-3">
-                <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">ISO 8601</span>
-                <span id="ts-iso" class="font-mono text-sm"></span>
-              </div>
-              <div class="flex gap-4 px-4 py-3">
-                <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">UTC</span>
-                <span id="ts-utc" class="font-mono text-sm"></span>
-              </div>
-              <div class="flex gap-4 px-4 py-3">
-                <span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Local</span>
-                <span id="ts-local" class="font-mono text-sm"></span>
-              </div>
+              <div class="flex gap-4 px-4 py-3"><span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Unix (s)</span><span id="ts-unix-s" class="font-mono text-sm"></span></div>
+              <div class="flex gap-4 px-4 py-3"><span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Unix (ms)</span><span id="ts-unix-ms" class="font-mono text-sm"></span></div>
+              <div class="flex gap-4 px-4 py-3"><span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">ISO 8601</span><span id="ts-iso" class="font-mono text-sm"></span></div>
+              <div class="flex gap-4 px-4 py-3"><span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">UTC</span><span id="ts-utc" class="font-mono text-sm"></span></div>
+              <div class="flex gap-4 px-4 py-3"><span class="w-24 text-sm font-medium text-gray-500 dark:text-gray-400 shrink-0">Local</span><span id="ts-local" class="font-mono text-sm"></span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lorem Ipsum -->
+      <section id="panel-lorem" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Lorem Ipsum Generator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Generate placeholder text for mockups and designs.</p>
+        <div class="space-y-4">
+          <div class="flex flex-wrap gap-4">
+            <div class="flex-1 min-w-32">
+              <label class="label" for="lorem-type">Type</label>
+              <select id="lorem-type" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="paragraphs">Paragraphs</option>
+                <option value="sentences">Sentences</option>
+                <option value="words">Words</option>
+              </select>
+            </div>
+            <div class="w-28">
+              <label class="label" for="lorem-count">Count</label>
+              <input id="lorem-count" type="number" min="1" max="100" value="3"
+                class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="lorem-generate-btn" class="btn-primary">Generate</button>
+          </div>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="lorem-output">Output</label>
+              <button id="lorem-copy-btn" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="lorem-output" class="tool-textarea" rows="12" readonly></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Password Generator -->
+      <section id="panel-password" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Password Generator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Generate a cryptographically secure random password.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="pwd-length">Length (4–128)</label>
+            <input id="pwd-length" type="number" min="4" max="128" value="16"
+              class="w-32 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label class="label mb-2">Character sets</label>
+            <div class="flex flex-wrap gap-4">
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
+                <input id="pwd-lower" type="checkbox" checked class="rounded" />
+                <span>Lowercase <code class="text-gray-400 text-xs">a–z</code></span>
+              </label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
+                <input id="pwd-upper" type="checkbox" checked class="rounded" />
+                <span>Uppercase <code class="text-gray-400 text-xs">A–Z</code></span>
+              </label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
+                <input id="pwd-digits" type="checkbox" checked class="rounded" />
+                <span>Numbers <code class="text-gray-400 text-xs">0–9</code></span>
+              </label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
+                <input id="pwd-symbols" type="checkbox" class="rounded" />
+                <span>Symbols <code class="text-gray-400 text-xs">!@#…</code></span>
+              </label>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="pwd-generate-btn" class="btn-primary">Generate</button>
+          </div>
+          <p id="pwd-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="pwd-output">Password</label>
+              <button id="pwd-copy-btn" class="btn-copy">Copy</button>
+            </div>
+            <input id="pwd-output" type="text" class="tool-input font-mono text-lg tracking-widest" readonly />
           </div>
         </div>
       </section>
@@ -792,30 +708,16 @@
           <div>
             <label class="label" for="regex-pattern">Pattern</label>
             <input id="regex-pattern" type="text"
-              class="w-full rounded-lg border border-gray-300 dark:border-gray-600
-                     bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
-                     px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"
               placeholder="\d+" />
           </div>
           <div>
             <label class="label mb-2">Flags</label>
             <div class="flex flex-wrap gap-4">
-              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
-                <input id="regex-flag-g" type="checkbox" checked class="rounded" />
-                <span><code class="text-indigo-600 dark:text-indigo-400">g</code> global</span>
-              </label>
-              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
-                <input id="regex-flag-i" type="checkbox" class="rounded" />
-                <span><code class="text-indigo-600 dark:text-indigo-400">i</code> case-insensitive</span>
-              </label>
-              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
-                <input id="regex-flag-m" type="checkbox" class="rounded" />
-                <span><code class="text-indigo-600 dark:text-indigo-400">m</code> multiline</span>
-              </label>
-              <label class="flex items-center gap-1.5 text-sm cursor-pointer">
-                <input id="regex-flag-s" type="checkbox" class="rounded" />
-                <span><code class="text-indigo-600 dark:text-indigo-400">s</code> dotAll</span>
-              </label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer"><input id="regex-flag-g" type="checkbox" checked class="rounded" /><span><code class="text-indigo-600 dark:text-indigo-400">g</code> global</span></label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer"><input id="regex-flag-i" type="checkbox" class="rounded" /><span><code class="text-indigo-600 dark:text-indigo-400">i</code> case-insensitive</span></label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer"><input id="regex-flag-m" type="checkbox" class="rounded" /><span><code class="text-indigo-600 dark:text-indigo-400">m</code> multiline</span></label>
+              <label class="flex items-center gap-1.5 text-sm cursor-pointer"><input id="regex-flag-s" type="checkbox" class="rounded" /><span><code class="text-indigo-600 dark:text-indigo-400">s</code> dotAll</span></label>
             </div>
           </div>
           <div>
@@ -829,6 +731,34 @@
           <div id="regex-matches" class="hidden space-y-2">
             <p class="label mb-2">Results — <span id="regex-match-count" class="font-semibold text-indigo-600 dark:text-indigo-400"></span></p>
             <div id="regex-match-list" class="space-y-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diff -->
+      <section id="panel-diff" class="tool-panel max-w-4xl">
+        <h1 class="text-2xl font-bold mb-1">Diff</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Compare two texts line by line and highlight additions and removals.</p>
+        <div class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="label" for="diff-a">Before</label>
+              <textarea id="diff-a" class="tool-textarea" rows="10" placeholder="Original text..."></textarea>
+            </div>
+            <div>
+              <label class="label" for="diff-b">After</label>
+              <textarea id="diff-b" class="tool-textarea" rows="10" placeholder="Modified text..."></textarea>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="diff-btn" class="btn-primary">Compare</button>
+          </div>
+          <div id="diff-result" class="hidden space-y-2">
+            <div class="flex items-center justify-between">
+              <p class="label mb-0">Changes — <span id="diff-stats"></span></p>
+            </div>
+            <div id="diff-output"
+              class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden overflow-x-auto"></div>
           </div>
         </div>
       </section>
