@@ -45,6 +45,7 @@
             <div class="nav-dropdown-item" data-tool="jwt-verifier"><span>✅</span> JWT Verifier</div>
             <div class="nav-dropdown-item" data-tool="jwt-generator"><span>✏️</span> JWT Generator</div>
             <div class="nav-dropdown-item" data-tool="jwks"><span>🔑</span> JWKS Generator</div>
+            <div class="nav-dropdown-item" data-tool="totp"><span>🔢</span> TOTP Generator</div>
           </div>
         </div>
 
@@ -60,10 +61,25 @@
             <div class="nav-dropdown-item" data-tool="color"><span>🎨</span> Color Converter</div>
             <div class="nav-dropdown-item" data-tool="string-case"><span>Aa</span> String Case</div>
             <div class="nav-dropdown-item" data-tool="json-ts"><span>📐</span> JSON → TypeScript</div>
+            <div class="nav-dropdown-item" data-tool="xml-formatter"><span>🗂️</span> XML Formatter</div>
+            <div class="nav-dropdown-item" data-tool="html-beautifier"><span>🖋️</span> HTML Beautifier</div>
+            <div class="nav-dropdown-item" data-tool="yaml-json"><span>↕️</span> YAML ↔ JSON</div>
+            <div class="nav-dropdown-item" data-tool="json-schema"><span>🛡️</span> JSON Schema</div>
+            <div class="nav-dropdown-item" data-tool="json-diff"><span>🔬</span> JSON Diff</div>
+            <div class="nav-dropdown-item" data-tool="unit-converter"><span>⚖️</span> Unit Converter</div>
           </div>
         </div>
 
-        <div class="nav-top-item" data-tool="url-parser">🌐 URL Parser</div>
+        <div class="nav-dropdown">
+          <button class="nav-top-btn">
+            Network
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden">
+            <div class="nav-dropdown-item" data-tool="url-parser"><span>🌐</span> URL Parser</div>
+            <div class="nav-dropdown-item" data-tool="cidr"><span>🔌</span> CIDR Calculator</div>
+          </div>
+        </div>
 
         <div class="nav-dropdown">
           <button class="nav-top-btn">
@@ -76,6 +92,8 @@
             <div class="nav-dropdown-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
             <div class="nav-dropdown-item" data-tool="password"><span>🔐</span> Password</div>
             <div class="nav-dropdown-item" data-tool="cron"><span>⏱️</span> Cron Parser</div>
+            <div class="nav-dropdown-item" data-tool="nanoid"><span>🎲</span> Nano ID</div>
+            <div class="nav-dropdown-item" data-tool="qrcode"><span>◼</span> QR Code</div>
           </div>
         </div>
 
@@ -89,6 +107,7 @@
             <div class="nav-dropdown-item" data-tool="diff"><span>↔️</span> Diff</div>
             <div class="nav-dropdown-item" data-tool="markdown"><span>📄</span> Markdown Preview</div>
             <div class="nav-dropdown-item" data-tool="text-stats"><span>📊</span> Text Stats</div>
+            <div class="nav-dropdown-item" data-tool="sort-lines"><span>📑</span> Sort / Dedupe Lines</div>
           </div>
         </div>
 
@@ -133,6 +152,7 @@
       <div class="nav-item" data-tool="jwt-verifier"><span>✅</span> JWT Verifier</div>
       <div class="nav-item" data-tool="jwt-generator"><span>✏️</span> JWT Generator</div>
       <div class="nav-item" data-tool="jwks"><span>🔑</span> JWKS Generator</div>
+      <div class="nav-item" data-tool="totp"><span>🔢</span> TOTP Generator</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Format &amp; Transform</p>
       <div class="nav-item" data-tool="json-formatter"><span>📋</span> JSON Formatter</div>
@@ -141,9 +161,16 @@
       <div class="nav-item" data-tool="color"><span>🎨</span> Color Converter</div>
       <div class="nav-item" data-tool="string-case"><span>Aa</span> String Case</div>
       <div class="nav-item" data-tool="json-ts"><span>📐</span> JSON → TypeScript</div>
+      <div class="nav-item" data-tool="xml-formatter"><span>🗂️</span> XML Formatter</div>
+      <div class="nav-item" data-tool="html-beautifier"><span>🖋️</span> HTML Beautifier</div>
+      <div class="nav-item" data-tool="yaml-json"><span>↕️</span> YAML ↔ JSON</div>
+      <div class="nav-item" data-tool="json-schema"><span>🛡️</span> JSON Schema</div>
+      <div class="nav-item" data-tool="json-diff"><span>🔬</span> JSON Diff</div>
+      <div class="nav-item" data-tool="unit-converter"><span>⚖️</span> Unit Converter</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Network</p>
       <div class="nav-item" data-tool="url-parser"><span>🌐</span> URL Parser</div>
+      <div class="nav-item" data-tool="cidr"><span>🔌</span> CIDR Calculator</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Generators</p>
       <div class="nav-item" data-tool="uuid"><span>🆔</span> UUID Generator</div>
@@ -151,12 +178,15 @@
       <div class="nav-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
       <div class="nav-item" data-tool="password"><span>🔐</span> Password</div>
       <div class="nav-item" data-tool="cron"><span>⏱️</span> Cron Parser</div>
+      <div class="nav-item" data-tool="nanoid"><span>🎲</span> Nano ID</div>
+      <div class="nav-item" data-tool="qrcode"><span>◼</span> QR Code</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Text</p>
       <div class="nav-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
       <div class="nav-item" data-tool="diff"><span>↔️</span> Diff</div>
       <div class="nav-item" data-tool="markdown"><span>📄</span> Markdown Preview</div>
       <div class="nav-item" data-tool="text-stats"><span>📊</span> Text Stats</div>
+      <div class="nav-item" data-tool="sort-lines"><span>📑</span> Sort / Dedupe Lines</div>
     </div>
   </div>
 
@@ -191,6 +221,7 @@
               <div class="home-card" data-tool="jwt-verifier"><span class="text-2xl">✅</span><div><p class="font-semibold text-sm">JWT Verifier</p><p class="text-xs text-gray-500 dark:text-gray-400">Verify JWT signature with HMAC or RSA/EC key</p></div></div>
               <div class="home-card" data-tool="jwt-generator"><span class="text-2xl">✏️</span><div><p class="font-semibold text-sm">JWT Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Build and sign JWTs with custom claims</p></div></div>
               <div class="home-card" data-tool="jwks"><span class="text-2xl">🔑</span><div><p class="font-semibold text-sm">JWKS Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate RSA-2048 or EC P-256 key pairs</p></div></div>
+              <div class="home-card" data-tool="totp"><span class="text-2xl">🔢</span><div><p class="font-semibold text-sm">TOTP Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Live time-based OTP codes from a base32 secret</p></div></div>
             </div>
           </div>
 
@@ -203,6 +234,12 @@
               <div class="home-card" data-tool="color"><span class="text-2xl">🎨</span><div><p class="font-semibold text-sm">Color Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between HEX, RGB, and HSL</p></div></div>
               <div class="home-card" data-tool="string-case"><span class="text-2xl">Aa</span><div><p class="font-semibold text-sm">String Case</p><p class="text-xs text-gray-500 dark:text-gray-400">camelCase, snake_case, kebab-case and more</p></div></div>
               <div class="home-card" data-tool="json-ts"><span class="text-2xl">📐</span><div><p class="font-semibold text-sm">JSON → TypeScript</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate TypeScript interfaces from JSON</p></div></div>
+              <div class="home-card" data-tool="xml-formatter"><span class="text-2xl">🗂️</span><div><p class="font-semibold text-sm">XML Formatter</p><p class="text-xs text-gray-500 dark:text-gray-400">Format, validate, and minify XML</p></div></div>
+              <div class="home-card" data-tool="html-beautifier"><span class="text-2xl">🖋️</span><div><p class="font-semibold text-sm">HTML Beautifier</p><p class="text-xs text-gray-500 dark:text-gray-400">Indent and minify HTML markup</p></div></div>
+              <div class="home-card" data-tool="yaml-json"><span class="text-2xl">↕️</span><div><p class="font-semibold text-sm">YAML ↔ JSON</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between YAML and JSON</p></div></div>
+              <div class="home-card" data-tool="json-schema"><span class="text-2xl">🛡️</span><div><p class="font-semibold text-sm">JSON Schema</p><p class="text-xs text-gray-500 dark:text-gray-400">Validate JSON data against a JSON Schema</p></div></div>
+              <div class="home-card" data-tool="json-diff"><span class="text-2xl">🔬</span><div><p class="font-semibold text-sm">JSON Diff</p><p class="text-xs text-gray-500 dark:text-gray-400">Semantic diff of two JSON structures</p></div></div>
+              <div class="home-card" data-tool="unit-converter"><span class="text-2xl">⚖️</span><div><p class="font-semibold text-sm">Unit Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Length, weight, temperature, data, time and more</p></div></div>
             </div>
           </div>
 
@@ -210,6 +247,7 @@
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Network</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               <div class="home-card" data-tool="url-parser"><span class="text-2xl">🌐</span><div><p class="font-semibold text-sm">URL Parser</p><p class="text-xs text-gray-500 dark:text-gray-400">Break a URL into protocol, host, path, params</p></div></div>
+              <div class="home-card" data-tool="cidr"><span class="text-2xl">🔌</span><div><p class="font-semibold text-sm">CIDR Calculator</p><p class="text-xs text-gray-500 dark:text-gray-400">Subnet mask, broadcast, host range from CIDR notation</p></div></div>
             </div>
           </div>
 
@@ -221,6 +259,8 @@
               <div class="home-card" data-tool="lorem"><span class="text-2xl">📝</span><div><p class="font-semibold text-sm">Lorem Ipsum</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate placeholder words, sentences, paragraphs</p></div></div>
               <div class="home-card" data-tool="password"><span class="text-2xl">🔐</span><div><p class="font-semibold text-sm">Password Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Secure random passwords with custom character sets</p></div></div>
               <div class="home-card" data-tool="cron"><span class="text-2xl">⏱️</span><div><p class="font-semibold text-sm">Cron Parser</p><p class="text-xs text-gray-500 dark:text-gray-400">Describe cron expressions and show next run times</p></div></div>
+              <div class="home-card" data-tool="nanoid"><span class="text-2xl">🎲</span><div><p class="font-semibold text-sm">Nano ID</p><p class="text-xs text-gray-500 dark:text-gray-400">Tiny, URL-safe unique IDs with custom alphabet</p></div></div>
+              <div class="home-card" data-tool="qrcode"><span class="text-2xl">◼</span><div><p class="font-semibold text-sm">QR Code</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate QR codes from any text or URL</p></div></div>
             </div>
           </div>
 
@@ -231,6 +271,7 @@
               <div class="home-card" data-tool="diff"><span class="text-2xl">↔️</span><div><p class="font-semibold text-sm">Diff</p><p class="text-xs text-gray-500 dark:text-gray-400">Compare two texts and highlight changes line by line</p></div></div>
               <div class="home-card" data-tool="markdown"><span class="text-2xl">📄</span><div><p class="font-semibold text-sm">Markdown Preview</p><p class="text-xs text-gray-500 dark:text-gray-400">Render Markdown to HTML with live preview</p></div></div>
               <div class="home-card" data-tool="text-stats"><span class="text-2xl">📊</span><div><p class="font-semibold text-sm">Text Stats</p><p class="text-xs text-gray-500 dark:text-gray-400">Character, word, sentence and byte counts</p></div></div>
+              <div class="home-card" data-tool="sort-lines"><span class="text-2xl">📑</span><div><p class="font-semibold text-sm">Sort / Dedupe Lines</p><p class="text-xs text-gray-500 dark:text-gray-400">Sort, reverse, shuffle, and deduplicate lines</p></div></div>
             </div>
           </div>
 
@@ -959,6 +1000,320 @@
               <button id="str-escape-copy" class="btn-copy">Copy</button>
             </div>
             <textarea id="str-escape-output" class="tool-textarea font-mono text-sm" rows="6" readonly placeholder="Result will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sort / Dedupe Lines -->
+      <section id="panel-sort-lines" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">Sort / Dedupe Lines</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Sort, reverse, shuffle, or deduplicate lines of text.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="sort-input">Input</label>
+            <textarea id="sort-input" class="tool-textarea" rows="10" placeholder="One line per item…"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="sort-az" class="btn-primary">A → Z</button>
+            <button id="sort-za" class="btn-primary">Z → A</button>
+            <button id="sort-reverse" class="btn-secondary">Reverse</button>
+            <button id="sort-shuffle" class="btn-secondary">Shuffle</button>
+            <button id="sort-dedupe" class="btn-secondary">Deduplicate</button>
+            <button id="sort-blank" class="btn-secondary">Remove Blank</button>
+            <button id="sort-clear" class="btn-secondary ml-auto">Clear</button>
+          </div>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0">Output — <span id="sort-stats" class="text-gray-400 text-xs font-normal"></span></label>
+              <button id="sort-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="sort-output" class="tool-textarea" rows="10" readonly placeholder="Result will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nano ID -->
+      <section id="panel-nanoid" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Nano ID Generator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Generate tiny, URL-safe unique IDs using <code class="font-mono text-xs">crypto.getRandomValues</code>.</p>
+        <div class="space-y-4">
+          <div class="flex flex-wrap gap-4">
+            <div>
+              <label class="label" for="nanoid-length">Length</label>
+              <input id="nanoid-length" type="number" min="1" max="256" value="21" class="w-24 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+            <div>
+              <label class="label" for="nanoid-count">Count</label>
+              <input id="nanoid-count" type="number" min="1" max="100" value="1" class="w-24 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+          <div>
+            <label class="label" for="nanoid-alphabet">Alphabet</label>
+            <input id="nanoid-alphabet" type="text" class="tool-input font-mono text-sm" value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-" />
+          </div>
+          <div class="flex gap-2">
+            <button id="nanoid-generate" class="btn-primary">Generate</button>
+            <button id="nanoid-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="nanoid-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="nanoid-output">IDs</label>
+              <button id="nanoid-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="nanoid-output" class="tool-textarea font-mono text-sm" rows="6" readonly></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- CIDR Calculator -->
+      <section id="panel-cidr" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">CIDR Calculator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Enter an IPv4 address with CIDR prefix to calculate network details.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="cidr-input">CIDR Notation</label>
+            <div class="flex gap-2">
+              <input id="cidr-input" type="text" class="flex-1 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="192.168.1.0/24" />
+              <button id="cidr-btn" class="btn-primary">Calculate</button>
+            </div>
+            <p class="text-xs text-gray-400 dark:text-gray-500 mt-1.5">Examples: <code class="font-mono">10.0.0.0/8</code> · <code class="font-mono">172.16.0.0/12</code> · <code class="font-mono">192.168.0.1/24</code></p>
+          </div>
+          <p id="cidr-error" class="error-text hidden"></p>
+          <div id="cidr-result" class="hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2">
+            <div id="cidr-output"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- XML Formatter -->
+      <section id="panel-xml-formatter" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">XML Formatter</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Format, validate, and minify XML using the browser's DOMParser.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="xml-input">XML Input</label>
+            <textarea id="xml-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="&lt;root&gt;&lt;item id=&quot;1&quot;&gt;value&lt;/item&gt;&lt;/root&gt;"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="xml-format" class="btn-primary">Format</button>
+            <button id="xml-minify" class="btn-primary">Minify</button>
+            <button id="xml-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="xml-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="xml-output">Output</label>
+              <button id="xml-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="xml-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Formatted XML will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTML Beautifier -->
+      <section id="panel-html-beautifier" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">HTML Beautifier</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Indent and format HTML markup, or minify it for production.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="html-b-input">HTML Input</label>
+            <textarea id="html-b-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="html-b-format" class="btn-primary">Beautify</button>
+            <button id="html-b-minify" class="btn-primary">Minify</button>
+            <button id="html-b-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="html-b-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="html-b-output">Output</label>
+              <button id="html-b-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="html-b-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Formatted HTML will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit Converter -->
+      <section id="panel-unit-converter" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Unit Converter</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between units of length, weight, temperature, data size, time, speed, area, and volume.</p>
+        <div class="space-y-4">
+          <div class="flex flex-wrap gap-4">
+            <div class="flex-1 min-w-36">
+              <label class="label" for="unit-category">Category</label>
+              <select id="unit-category" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></select>
+            </div>
+            <div class="flex-1 min-w-24">
+              <label class="label" for="unit-from">From</label>
+              <select id="unit-from" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></select>
+            </div>
+            <div class="flex-1 min-w-24">
+              <label class="label" for="unit-value">Value</label>
+              <input id="unit-value" type="number" class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="1" />
+            </div>
+          </div>
+          <div id="unit-output" class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2"></div>
+        </div>
+      </section>
+
+      <!-- TOTP Generator -->
+      <section id="panel-totp" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">TOTP Generator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Generate live Time-based OTP codes (RFC 6238) from a base32 secret using Web Crypto.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="totp-secret">Base32 Secret</label>
+            <input id="totp-secret" type="text" class="tool-input font-mono tracking-widest" placeholder="JBSWY3DPEHPK3PXP" autocomplete="off" />
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <div>
+              <label class="label" for="totp-period">Period (seconds)</label>
+              <select id="totp-period" class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="30" selected>30s</option>
+                <option value="60">60s</option>
+              </select>
+            </div>
+            <div>
+              <label class="label" for="totp-digits">Digits</label>
+              <select id="totp-digits" class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="6" selected>6</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="totp-generate" class="btn-primary">Generate</button>
+          </div>
+          <p id="totp-error" class="error-text hidden"></p>
+          <div id="totp-result" class="hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 text-center space-y-3">
+            <p id="totp-code" class="text-5xl font-mono font-bold tracking-widest text-indigo-600 dark:text-indigo-400"></p>
+            <p id="totp-remaining" class="text-sm text-gray-500 dark:text-gray-400"></p>
+            <div class="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+              <div id="totp-progress" class="h-full bg-indigo-500 transition-all duration-1000 ease-linear" style="width:100%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- YAML ↔ JSON -->
+      <section id="panel-yaml-json" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">YAML ↔ JSON</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between YAML and JSON formats using <code class="font-mono text-xs">js-yaml</code>.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="yaml-input">Input</label>
+            <textarea id="yaml-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="Paste YAML or JSON here…"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="yaml-to-json" class="btn-primary">YAML → JSON</button>
+            <button id="json-to-yaml" class="btn-primary">JSON → YAML</button>
+            <button id="yaml-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="yaml-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="yaml-output">Output</label>
+              <button id="yaml-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="yaml-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Result will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- QR Code Generator -->
+      <section id="panel-qrcode" class="tool-panel max-w-xl">
+        <h1 class="text-2xl font-bold mb-1">QR Code Generator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Generate a QR code from any text or URL.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="qr-input">Text / URL</label>
+            <input id="qr-input" type="text" class="tool-input" placeholder="https://example.com" />
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <div>
+              <label class="label" for="qr-level">Error Correction</label>
+              <select id="qr-level" class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="L">L — Low (7%)</option>
+                <option value="M" selected>M — Medium (15%)</option>
+                <option value="Q">Q — Quartile (25%)</option>
+                <option value="H">H — High (30%)</option>
+              </select>
+            </div>
+            <div>
+              <label class="label" for="qr-size">Size (px)</label>
+              <input id="qr-size" type="number" min="64" max="1024" value="256" class="w-28 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="qr-generate" class="btn-primary">Generate</button>
+          </div>
+          <p id="qr-error" class="error-text hidden"></p>
+          <div id="qr-result" class="hidden space-y-3">
+            <canvas id="qr-canvas" class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white mx-auto block"></canvas>
+            <div class="flex justify-center">
+              <button id="qr-download" class="btn-secondary">Download PNG</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JSON Schema Validator -->
+      <section id="panel-json-schema" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">JSON Schema Validator</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Validate JSON data against a JSON Schema (supports type, properties, required, items, combinators, and more).</p>
+        <div class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="label" for="jschema-data">JSON Data</label>
+              <textarea id="jschema-data" class="tool-textarea font-mono text-sm" rows="10" placeholder='{"name": "Alice", "age": 30}'></textarea>
+            </div>
+            <div>
+              <label class="label" for="jschema-schema">JSON Schema</label>
+              <textarea id="jschema-schema" class="tool-textarea font-mono text-sm" rows="10" placeholder='{"type": "object", "required": ["name"], "properties": {"name": {"type": "string"}, "age": {"type": "integer", "minimum": 0}}}'></textarea>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button id="jschema-validate" class="btn-primary">Validate</button>
+            <button id="jschema-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="jschema-error" class="error-text hidden"></p>
+          <div id="jschema-result" class="hidden space-y-2">
+            <div id="jschema-status"></div>
+            <ul id="jschema-errors" class="hidden list-disc pl-5 space-y-1 text-red-600 dark:text-red-400"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- JSON Semantic Diff -->
+      <section id="panel-json-diff" class="tool-panel max-w-4xl">
+        <h1 class="text-2xl font-bold mb-1">JSON Semantic Diff</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Compare two JSON structures semantically — see added, removed, and changed values by path.</p>
+        <div class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="label" for="jdiff-a">JSON A (before)</label>
+              <textarea id="jdiff-a" class="tool-textarea font-mono text-sm" rows="10" placeholder='{"name": "Alice", "age": 30}'></textarea>
+            </div>
+            <div>
+              <label class="label" for="jdiff-b">JSON B (after)</label>
+              <textarea id="jdiff-b" class="tool-textarea font-mono text-sm" rows="10" placeholder='{"name": "Bob", "age": 30, "city": "Paris"}'></textarea>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <button id="jdiff-btn" class="btn-primary">Compare</button>
+            <button id="jdiff-clear" class="btn-secondary">Clear</button>
+            <label class="flex items-center gap-2 text-sm cursor-pointer ml-auto">
+              <input id="jdiff-show-unchanged" type="checkbox" class="rounded" />
+              Show unchanged
+            </label>
+          </div>
+          <p id="jdiff-error" class="error-text hidden"></p>
+          <div id="jdiff-result" class="hidden space-y-2">
+            <p class="label mb-0">Changes — <span id="jdiff-summary"></span></p>
+            <div id="jdiff-output" class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2 font-mono text-xs"></div>
           </div>
         </div>
       </section>

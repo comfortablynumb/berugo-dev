@@ -21,6 +21,17 @@ import { initJsonTs } from './tools/json-ts.js';
 import { initCron } from './tools/cron.js';
 import { initTextStats } from './tools/text-stats.js';
 import { initStringEscape } from './tools/string-escape.js';
+import { initSortLines } from './tools/sort-lines.js';
+import { initNanoid } from './tools/nanoid.js';
+import { initCidr } from './tools/cidr.js';
+import { initXmlFormatter } from './tools/xml-formatter.js';
+import { initHtmlBeautifier } from './tools/html-beautifier.js';
+import { initUnitConverter } from './tools/unit-converter.js';
+import { initTotp } from './tools/totp.js';
+import { initYamlJson } from './tools/yaml-json.js';
+import { initQrCode } from './tools/qrcode.js';
+import { initJsonSchema } from './tools/json-schema.js';
+import { initJsonDiff } from './tools/json-diff.js';
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
@@ -122,6 +133,17 @@ $(document).ready(() => {
   initCron();
   initTextStats();
   initStringEscape();
+  initSortLines();
+  initNanoid();
+  initCidr();
+  initXmlFormatter();
+  initHtmlBeautifier();
+  initUnitConverter();
+  initTotp();
+  initYamlJson();
+  initQrCode();
+  initJsonSchema();
+  initJsonDiff();
 
   const saved = localStorage.getItem('activeTool') || 'home';
   activateTool(saved);
