@@ -30,6 +30,7 @@
             <div class="nav-dropdown-item" data-tool="base64"><span>🔤</span> Base64</div>
             <div class="nav-dropdown-item" data-tool="url-codec"><span>🔗</span> URL Codec</div>
             <div class="nav-dropdown-item" data-tool="html-entities"><span>🏷️</span> HTML Entities</div>
+            <div class="nav-dropdown-item" data-tool="string-escape"><span>🔀</span> String Escape</div>
           </div>
         </div>
 
@@ -58,6 +59,7 @@
             <div class="nav-dropdown-item" data-tool="number-base"><span>🔢</span> Number Base</div>
             <div class="nav-dropdown-item" data-tool="color"><span>🎨</span> Color Converter</div>
             <div class="nav-dropdown-item" data-tool="string-case"><span>Aa</span> String Case</div>
+            <div class="nav-dropdown-item" data-tool="json-ts"><span>📐</span> JSON → TypeScript</div>
           </div>
         </div>
 
@@ -73,6 +75,7 @@
             <div class="nav-dropdown-item" data-tool="timestamp"><span>🕐</span> Timestamp</div>
             <div class="nav-dropdown-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
             <div class="nav-dropdown-item" data-tool="password"><span>🔐</span> Password</div>
+            <div class="nav-dropdown-item" data-tool="cron"><span>⏱️</span> Cron Parser</div>
           </div>
         </div>
 
@@ -84,6 +87,8 @@
           <div class="nav-dropdown-menu hidden">
             <div class="nav-dropdown-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
             <div class="nav-dropdown-item" data-tool="diff"><span>↔️</span> Diff</div>
+            <div class="nav-dropdown-item" data-tool="markdown"><span>📄</span> Markdown Preview</div>
+            <div class="nav-dropdown-item" data-tool="text-stats"><span>📊</span> Text Stats</div>
           </div>
         </div>
 
@@ -120,6 +125,7 @@
       <div class="nav-item" data-tool="base64"><span>🔤</span> Base64</div>
       <div class="nav-item" data-tool="url-codec"><span>🔗</span> URL Codec</div>
       <div class="nav-item" data-tool="html-entities"><span>🏷️</span> HTML Entities</div>
+      <div class="nav-item" data-tool="string-escape"><span>🔀</span> String Escape</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Crypto &amp; Security</p>
       <div class="nav-item" data-tool="hash"><span>#️⃣</span> Hash Generator</div>
@@ -134,6 +140,7 @@
       <div class="nav-item" data-tool="number-base"><span>🔢</span> Number Base</div>
       <div class="nav-item" data-tool="color"><span>🎨</span> Color Converter</div>
       <div class="nav-item" data-tool="string-case"><span>Aa</span> String Case</div>
+      <div class="nav-item" data-tool="json-ts"><span>📐</span> JSON → TypeScript</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Network</p>
       <div class="nav-item" data-tool="url-parser"><span>🌐</span> URL Parser</div>
@@ -143,25 +150,27 @@
       <div class="nav-item" data-tool="timestamp"><span>🕐</span> Timestamp</div>
       <div class="nav-item" data-tool="lorem"><span>📝</span> Lorem Ipsum</div>
       <div class="nav-item" data-tool="password"><span>🔐</span> Password</div>
+      <div class="nav-item" data-tool="cron"><span>⏱️</span> Cron Parser</div>
 
       <p class="px-3 py-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">Text</p>
       <div class="nav-item" data-tool="regex"><span>🔎</span> Regex Tester</div>
       <div class="nav-item" data-tool="diff"><span>↔️</span> Diff</div>
+      <div class="nav-item" data-tool="markdown"><span>📄</span> Markdown Preview</div>
+      <div class="nav-item" data-tool="text-stats"><span>📊</span> Text Stats</div>
     </div>
   </div>
 
   <!-- Main -->
   <main class="pt-20 p-6">
 
+    <!-- Info banner -->
+    <div class="max-w-4xl mb-6 flex items-center gap-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 px-4 py-2.5 text-sm text-blue-700 dark:text-blue-300">
+      <span class="shrink-0">ℹ️</span>
+      <p>Browser-based developer tools. Everything runs locally in your browser — no data is ever sent to a server.</p>
+    </div>
+
       <!-- Home -->
       <section id="panel-home" class="tool-panel max-w-4xl">
-        <div class="mb-8">
-          <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-            Browser-based developer tools. Everything runs locally in your browser —
-            no data is ever sent to a server.
-          </p>
-        </div>
-
         <div class="space-y-6">
 
           <div>
@@ -170,6 +179,7 @@
               <div class="home-card" data-tool="base64"><span class="text-2xl">🔤</span><div><p class="font-semibold text-sm">Base64</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode UTF-8 safe Base64</p></div></div>
               <div class="home-card" data-tool="url-codec"><span class="text-2xl">🔗</span><div><p class="font-semibold text-sm">URL Codec</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode URL components</p></div></div>
               <div class="home-card" data-tool="html-entities"><span class="text-2xl">🏷️</span><div><p class="font-semibold text-sm">HTML Entities</p><p class="text-xs text-gray-500 dark:text-gray-400">Encode and decode HTML entities</p></div></div>
+              <div class="home-card" data-tool="string-escape"><span class="text-2xl">🔀</span><div><p class="font-semibold text-sm">String Escape</p><p class="text-xs text-gray-500 dark:text-gray-400">Escape and unescape JSON-safe strings</p></div></div>
             </div>
           </div>
 
@@ -192,6 +202,7 @@
               <div class="home-card" data-tool="number-base"><span class="text-2xl">🔢</span><div><p class="font-semibold text-sm">Number Base</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between binary, octal, decimal, hex</p></div></div>
               <div class="home-card" data-tool="color"><span class="text-2xl">🎨</span><div><p class="font-semibold text-sm">Color Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Convert between HEX, RGB, and HSL</p></div></div>
               <div class="home-card" data-tool="string-case"><span class="text-2xl">Aa</span><div><p class="font-semibold text-sm">String Case</p><p class="text-xs text-gray-500 dark:text-gray-400">camelCase, snake_case, kebab-case and more</p></div></div>
+              <div class="home-card" data-tool="json-ts"><span class="text-2xl">📐</span><div><p class="font-semibold text-sm">JSON → TypeScript</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate TypeScript interfaces from JSON</p></div></div>
             </div>
           </div>
 
@@ -209,6 +220,7 @@
               <div class="home-card" data-tool="timestamp"><span class="text-2xl">🕐</span><div><p class="font-semibold text-sm">Timestamp Converter</p><p class="text-xs text-gray-500 dark:text-gray-400">Unix timestamp ↔ human-readable date</p></div></div>
               <div class="home-card" data-tool="lorem"><span class="text-2xl">📝</span><div><p class="font-semibold text-sm">Lorem Ipsum</p><p class="text-xs text-gray-500 dark:text-gray-400">Generate placeholder words, sentences, paragraphs</p></div></div>
               <div class="home-card" data-tool="password"><span class="text-2xl">🔐</span><div><p class="font-semibold text-sm">Password Generator</p><p class="text-xs text-gray-500 dark:text-gray-400">Secure random passwords with custom character sets</p></div></div>
+              <div class="home-card" data-tool="cron"><span class="text-2xl">⏱️</span><div><p class="font-semibold text-sm">Cron Parser</p><p class="text-xs text-gray-500 dark:text-gray-400">Describe cron expressions and show next run times</p></div></div>
             </div>
           </div>
 
@@ -217,6 +229,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               <div class="home-card" data-tool="regex"><span class="text-2xl">🔎</span><div><p class="font-semibold text-sm">Regex Tester</p><p class="text-xs text-gray-500 dark:text-gray-400">Test regular expressions with live match results</p></div></div>
               <div class="home-card" data-tool="diff"><span class="text-2xl">↔️</span><div><p class="font-semibold text-sm">Diff</p><p class="text-xs text-gray-500 dark:text-gray-400">Compare two texts and highlight changes line by line</p></div></div>
+              <div class="home-card" data-tool="markdown"><span class="text-2xl">📄</span><div><p class="font-semibold text-sm">Markdown Preview</p><p class="text-xs text-gray-500 dark:text-gray-400">Render Markdown to HTML with live preview</p></div></div>
+              <div class="home-card" data-tool="text-stats"><span class="text-2xl">📊</span><div><p class="font-semibold text-sm">Text Stats</p><p class="text-xs text-gray-500 dark:text-gray-400">Character, word, sentence and byte counts</p></div></div>
             </div>
           </div>
 
@@ -830,6 +844,121 @@
             </div>
             <div id="diff-output"
               class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden overflow-x-auto"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Markdown Preview -->
+      <section id="panel-markdown" class="tool-panel max-w-5xl">
+        <h1 class="text-2xl font-bold mb-1">Markdown Preview</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Write Markdown and see the rendered HTML side by side.</p>
+        <div class="flex gap-2 mb-3">
+          <button id="md-tab-raw" class="active-tab px-3 py-1 rounded-lg text-sm font-medium transition-colors">Raw</button>
+          <button id="md-tab-preview" class="inactive-tab px-3 py-1 rounded-lg text-sm font-medium transition-colors">Preview</button>
+          <button id="md-clear" class="btn-secondary ml-auto">Clear</button>
+        </div>
+        <div id="md-raw-pane">
+          <textarea id="md-input" class="tool-textarea" rows="20" placeholder="# Hello, World!&#10;&#10;Type your **Markdown** here…"></textarea>
+        </div>
+        <div id="md-preview-pane" class="hidden">
+          <div id="md-preview-content"
+            class="md-preview rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 min-h-80 overflow-auto text-sm leading-relaxed">
+          </div>
+        </div>
+      </section>
+
+      <!-- JSON → TypeScript -->
+      <section id="panel-json-ts" class="tool-panel max-w-3xl">
+        <h1 class="text-2xl font-bold mb-1">JSON → TypeScript</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Paste JSON and get TypeScript interfaces (recursive, handles nested objects and arrays).</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="json-ts-input">JSON Input</label>
+            <textarea id="json-ts-input" class="tool-textarea font-mono text-sm" rows="8" placeholder='{"name": "Alice", "age": 30, "address": {"city": "Paris"}}'></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="json-ts-btn" class="btn-primary">Generate</button>
+            <button id="json-ts-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="json-ts-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="json-ts-output">TypeScript Output</label>
+              <button id="json-ts-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="json-ts-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="TypeScript interfaces will appear here…"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cron Parser -->
+      <section id="panel-cron" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Cron Expression Parser</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Enter a cron expression (5 or 6 fields) to get a human-readable description and the next 5 scheduled run times.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="cron-input">Cron Expression</label>
+            <div class="flex gap-2">
+              <input id="cron-input" type="text"
+                class="flex-1 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="0 9 * * 1-5" />
+              <button id="cron-btn" class="btn-primary">Parse</button>
+            </div>
+            <p class="text-xs text-gray-400 dark:text-gray-500 mt-1.5">Examples: <code class="font-mono">*/5 * * * *</code> · <code class="font-mono">0 9 * * 1-5</code> · <code class="font-mono">0 0 1 * *</code></p>
+          </div>
+          <p id="cron-error" class="error-text hidden"></p>
+          <div id="cron-result" class="hidden space-y-4">
+            <div class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Description</p>
+              <p id="cron-description" class="text-base font-medium"></p>
+            </div>
+            <div class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2">Next 5 Run Times</p>
+              <ul id="cron-runs" class="font-mono text-sm divide-y divide-gray-100 dark:divide-gray-700"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Text Stats -->
+      <section id="panel-text-stats" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">Text Stats</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Live statistics for any text you paste or type.</p>
+        <div class="space-y-4">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="text-stats-input">Input</label>
+              <button id="text-stats-clear" class="btn-secondary text-xs py-1 px-2">Clear</button>
+            </div>
+            <textarea id="text-stats-input" class="tool-textarea" rows="8" placeholder="Paste or type your text here…"></textarea>
+          </div>
+          <div id="text-stats-output"
+            class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2">
+          </div>
+        </div>
+      </section>
+
+      <!-- String Escape -->
+      <section id="panel-string-escape" class="tool-panel max-w-2xl">
+        <h1 class="text-2xl font-bold mb-1">String Escape</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Escape raw strings to JSON-safe format (<code class="font-mono text-xs">\n</code>, <code class="font-mono text-xs">\t</code>, <code class="font-mono text-xs">\"</code>, <code class="font-mono text-xs">\\</code>, <code class="font-mono text-xs">\uXXXX</code>) or unescape back to raw.</p>
+        <div class="space-y-4">
+          <div>
+            <label class="label" for="str-escape-input">Input</label>
+            <textarea id="str-escape-input" class="tool-textarea font-mono text-sm" rows="6" placeholder="Paste raw or escaped string here…"></textarea>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="str-escape-btn" class="btn-primary">Escape</button>
+            <button id="str-unescape-btn" class="btn-primary">Unescape</button>
+            <button id="str-escape-clear" class="btn-secondary">Clear</button>
+          </div>
+          <p id="str-escape-error" class="error-text hidden"></p>
+          <div class="output-box">
+            <div class="flex items-center justify-between mb-1">
+              <label class="label mb-0" for="str-escape-output">Output</label>
+              <button id="str-escape-copy" class="btn-copy">Copy</button>
+            </div>
+            <textarea id="str-escape-output" class="tool-textarea font-mono text-sm" rows="6" readonly placeholder="Result will appear here…"></textarea>
           </div>
         </div>
       </section>

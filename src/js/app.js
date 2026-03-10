@@ -16,6 +16,11 @@ import { initLorem } from './tools/lorem.js';
 import { initPassword } from './tools/password.js';
 import { initRegex } from './tools/regex.js';
 import { initDiff } from './tools/diff.js';
+import { initMarkdown } from './tools/markdown.js';
+import { initJsonTs } from './tools/json-ts.js';
+import { initCron } from './tools/cron.js';
+import { initTextStats } from './tools/text-stats.js';
+import { initStringEscape } from './tools/string-escape.js';
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
@@ -112,6 +117,11 @@ $(document).ready(() => {
   initPassword();
   initRegex();
   initDiff();
+  initMarkdown();
+  initJsonTs();
+  initCron();
+  initTextStats();
+  initStringEscape();
 
   const saved = localStorage.getItem('activeTool') || 'home';
   activateTool(saved);
