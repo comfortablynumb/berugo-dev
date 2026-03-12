@@ -32,6 +32,11 @@ import { initYamlJson } from './tools/yaml-json.js';
 import { initQrCode } from './tools/qrcode.js';
 import { initJsonSchema } from './tools/json-schema.js';
 import { initJsonDiff } from './tools/json-diff.js';
+import { initDateCalc } from './tools/date-calc.js';
+import { initChmod } from './tools/chmod.js';
+import { initImageBase64 } from './tools/image-base64.js';
+import { initHexDump } from './tools/hex-dump.js';
+import { initHmac } from './tools/hmac.js';
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
@@ -144,6 +149,11 @@ $(document).ready(() => {
   initQrCode();
   initJsonSchema();
   initJsonDiff();
+  initDateCalc();
+  initChmod();
+  initImageBase64();
+  initHexDump();
+  initHmac();
 
   const saved = localStorage.getItem('activeTool') || 'home';
   activateTool(saved);
