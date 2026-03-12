@@ -318,17 +318,16 @@
       <section id="panel-base64" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">Base64</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Encode and decode text using Base64 (UTF-8 safe).</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="base64-input">Input</label>
             <textarea id="base64-input" class="tool-textarea" rows="6" placeholder="Enter text or Base64..."></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="base64-encode" class="btn-primary">Encode</button>
             <button id="base64-decode" class="btn-primary">Decode</button>
             <button id="base64-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="base64-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="base64-output">Output</label>
@@ -337,23 +336,23 @@
             <textarea id="base64-output" class="tool-textarea" rows="6" readonly placeholder="Result will appear here..."></textarea>
           </div>
         </div>
+        <p id="base64-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- URL Codec -->
       <section id="panel-url-codec" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">URL Codec</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Encode and decode URL components.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="url-input">Input</label>
             <textarea id="url-input" class="tool-textarea" rows="6" placeholder="Enter text or URL-encoded string..."></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="url-encode" class="btn-primary">Encode</button>
             <button id="url-decode" class="btn-primary">Decode</button>
             <button id="url-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="url-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="url-output">Output</label>
@@ -362,19 +361,20 @@
             <textarea id="url-output" class="tool-textarea" rows="6" readonly placeholder="Result will appear here..."></textarea>
           </div>
         </div>
+        <p id="url-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- HTML Entities -->
       <section id="panel-html-entities" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">HTML Entities</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Encode special characters to HTML entities and decode them back.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="entities-input">Input</label>
             <textarea id="entities-input" class="tool-textarea" rows="6"
               placeholder="Encode: <div class=&quot;foo&quot;>Hello &amp; World</div>&#10;Decode: &lt;div&gt;&amp;amp;&lt;/div&gt;"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="entities-encode-btn" class="btn-primary">Encode</button>
             <button id="entities-decode-btn" class="btn-primary">Decode</button>
             <button id="entities-clear-btn" class="btn-secondary">Clear</button>
@@ -556,51 +556,51 @@
       <section id="panel-json-formatter" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">JSON Formatter</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Format, validate, and minify JSON.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="json-input">Input JSON</label>
             <textarea id="json-input" class="tool-textarea" rows="10" placeholder='{"key": "value"}'></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="json-format-btn" class="btn-primary">Format</button>
             <button id="json-minify-btn" class="btn-primary">Minify</button>
             <button id="json-clear-btn" class="btn-secondary">Clear</button>
           </div>
-          <p id="json-error" class="error-text hidden"></p>
-          <div id="json-output-wrap" class="output-box hidden">
+          <div id="json-output-wrap" class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="json-output">Output</label>
               <button id="json-copy-btn" class="btn-copy">Copy</button>
             </div>
-            <textarea id="json-output" class="tool-textarea" rows="12" readonly></textarea>
+            <textarea id="json-output" class="tool-textarea" rows="10" readonly placeholder="Result will appear here..."></textarea>
           </div>
         </div>
+        <p id="json-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- CSV ↔ JSON -->
       <section id="panel-csv-json" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">CSV ↔ JSON</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between CSV (first row as headers) and a JSON array of objects.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="csv-json-input">Input</label>
             <textarea id="csv-json-input" class="tool-textarea" rows="10"
               placeholder="CSV example:&#10;name,age,city&#10;Alice,30,London&#10;Bob,25,Paris"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="csv-to-json-btn" class="btn-primary">CSV → JSON</button>
             <button id="json-to-csv-btn" class="btn-primary">JSON → CSV</button>
             <button id="csv-json-clear-btn" class="btn-secondary">Clear</button>
           </div>
-          <p id="csv-json-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="csv-json-output">Output</label>
               <button id="csv-json-copy-btn" class="btn-copy">Copy</button>
             </div>
-            <textarea id="csv-json-output" class="tool-textarea" rows="12" readonly placeholder="Result will appear here..."></textarea>
+            <textarea id="csv-json-output" class="tool-textarea" rows="10" readonly placeholder="Result will appear here..."></textarea>
           </div>
         </div>
+        <p id="csv-json-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- Number Base Converter -->
@@ -1019,17 +1019,16 @@
       <section id="panel-string-escape" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">String Escape</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Escape raw strings to JSON-safe format (<code class="font-mono text-xs">\n</code>, <code class="font-mono text-xs">\t</code>, <code class="font-mono text-xs">\"</code>, <code class="font-mono text-xs">\\</code>, <code class="font-mono text-xs">\uXXXX</code>) or unescape back to raw.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="str-escape-input">Input</label>
             <textarea id="str-escape-input" class="tool-textarea font-mono text-sm" rows="6" placeholder="Paste raw or escaped string here…"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="str-escape-btn" class="btn-primary">Escape</button>
             <button id="str-unescape-btn" class="btn-primary">Unescape</button>
             <button id="str-escape-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="str-escape-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="str-escape-output">Output</label>
@@ -1038,25 +1037,26 @@
             <textarea id="str-escape-output" class="tool-textarea font-mono text-sm" rows="6" readonly placeholder="Result will appear here…"></textarea>
           </div>
         </div>
+        <p id="str-escape-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- Sort / Dedupe Lines -->
       <section id="panel-sort-lines" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">Sort / Dedupe Lines</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Sort, reverse, shuffle, or deduplicate lines of text.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="sort-input">Input</label>
             <textarea id="sort-input" class="tool-textarea" rows="10" placeholder="One line per item…"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="sort-az" class="btn-primary">A → Z</button>
             <button id="sort-za" class="btn-primary">Z → A</button>
             <button id="sort-reverse" class="btn-secondary">Reverse</button>
             <button id="sort-shuffle" class="btn-secondary">Shuffle</button>
             <button id="sort-dedupe" class="btn-secondary">Deduplicate</button>
             <button id="sort-blank" class="btn-secondary">Remove Blank</button>
-            <button id="sort-clear" class="btn-secondary ml-auto">Clear</button>
+            <button id="sort-clear" class="btn-secondary">Clear</button>
           </div>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
@@ -1126,17 +1126,16 @@
       <section id="panel-xml-formatter" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">XML Formatter</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Format, validate, and minify XML using the browser's DOMParser.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="xml-input">XML Input</label>
             <textarea id="xml-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="&lt;root&gt;&lt;item id=&quot;1&quot;&gt;value&lt;/item&gt;&lt;/root&gt;"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="xml-format" class="btn-primary">Format</button>
             <button id="xml-minify" class="btn-primary">Minify</button>
             <button id="xml-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="xml-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="xml-output">Output</label>
@@ -1145,23 +1144,23 @@
             <textarea id="xml-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Formatted XML will appear here…"></textarea>
           </div>
         </div>
+        <p id="xml-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- HTML Beautifier -->
       <section id="panel-html-beautifier" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">HTML Beautifier</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Indent and format HTML markup, or minify it for production.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="html-b-input">HTML Input</label>
             <textarea id="html-b-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="html-b-format" class="btn-primary">Beautify</button>
             <button id="html-b-minify" class="btn-primary">Minify</button>
             <button id="html-b-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="html-b-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="html-b-output">Output</label>
@@ -1170,6 +1169,7 @@
             <textarea id="html-b-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Formatted HTML will appear here…"></textarea>
           </div>
         </div>
+        <p id="html-b-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- Unit Converter -->
@@ -1238,17 +1238,16 @@
       <section id="panel-yaml-json" class="tool-panel">
         <h1 class="text-2xl font-bold mb-1">YAML ↔ JSON</h1>
         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Convert between YAML and JSON formats using <code class="font-mono text-xs">js-yaml</code>.</p>
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4">
           <div>
             <label class="label" for="yaml-input">Input</label>
             <textarea id="yaml-input" class="tool-textarea font-mono text-sm" rows="10" placeholder="Paste YAML or JSON here…"></textarea>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex md:flex-col flex-wrap gap-2 md:self-center">
             <button id="yaml-to-json" class="btn-primary">YAML → JSON</button>
             <button id="json-to-yaml" class="btn-primary">JSON → YAML</button>
             <button id="yaml-clear" class="btn-secondary">Clear</button>
           </div>
-          <p id="yaml-error" class="error-text hidden"></p>
           <div class="output-box">
             <div class="flex items-center justify-between mb-1">
               <label class="label mb-0" for="yaml-output">Output</label>
@@ -1257,6 +1256,7 @@
             <textarea id="yaml-output" class="tool-textarea font-mono text-sm" rows="10" readonly placeholder="Result will appear here…"></textarea>
           </div>
         </div>
+        <p id="yaml-error" class="error-text hidden mt-2"></p>
       </section>
 
       <!-- QR Code Generator -->
