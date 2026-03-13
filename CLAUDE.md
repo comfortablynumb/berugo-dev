@@ -4,6 +4,7 @@ Browser-only SPA developer tools. No backend.
 
 ## Stack
 - jQuery 3.x (CDN), Tailwind CSS 3 (CLI), jose 5.x (ESM CDN), Web Crypto API
+- sql-formatter 15.x, bcryptjs 2.x, jsonpath-plus 10.x (ESM CDN)
 
 ## Structure
 ```

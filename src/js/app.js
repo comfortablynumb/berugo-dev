@@ -37,6 +37,12 @@ import { initChmod } from './tools/chmod.js';
 import { initImageBase64 } from './tools/image-base64.js';
 import { initHexDump } from './tools/hex-dump.js';
 import { initHmac } from './tools/hmac.js';
+import { initSqlFormatter } from './tools/sql-formatter.js';
+import { initCssFormatter } from './tools/css-formatter.js';
+import { initJsFormatter } from './tools/js-formatter.js';
+import { initPemDecoder } from './tools/pem-decoder.js';
+import { initBcrypt } from './tools/bcrypt.js';
+import { initJsonPath } from './tools/jsonpath.js';
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
@@ -154,6 +160,12 @@ $(document).ready(() => {
   initImageBase64();
   initHexDump();
   initHmac();
+  initSqlFormatter();
+  initCssFormatter();
+  initJsFormatter();
+  initPemDecoder();
+  initBcrypt();
+  initJsonPath();
 
   const saved = localStorage.getItem('activeTool') || 'home';
   activateTool(saved);

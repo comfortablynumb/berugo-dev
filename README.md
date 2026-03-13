@@ -19,6 +19,8 @@ Browser-based developer tools SPA. No backend — everything runs in the browser
 | **Hash Generator** | SHA-1, SHA-256, SHA-384, SHA-512 via Web Crypto API |
 | **HMAC Signature** | Sign messages with HMAC-SHA-1/256/384/512; output as hex or base64 |
 | **TOTP Generator** | Live time-based OTP codes (RFC 6238) from a base32 secret |
+| **PEM / X.509 Decoder** | Decode PEM certificates — version, subject, issuer, validity, extensions |
+| **Bcrypt Hash** | Hash passwords with bcrypt or verify a password against a hash |
 
 ### JWT
 | Tool | Description |
@@ -45,12 +47,16 @@ Browser-based developer tools SPA. No backend — everything runs in the browser
 | **Unit Converter** | Length, weight, temperature, data, time, speed, area, volume |
 | **Chmod Calculator** | Toggle permission bits or enter octal/symbolic → full Unix chmod breakdown |
 | **Hex Dump** | View text as a hex dump: offset · hex bytes · ASCII columns |
+| **SQL Formatter** | Format and minify SQL with keyword uppercasing (multiple dialects) |
+| **CSS Formatter** | Beautify and minify CSS stylesheets |
+| **JS Formatter** | Format and minify JavaScript code |
 
 ### Network
 | Tool | Description |
 |------|-------------|
 | **URL Parser** | Break a URL into protocol, host, path, port, query params, hash |
 | **CIDR Calculator** | Subnet mask, broadcast, host range from CIDR notation |
+| **JSONPath Evaluator** | Test JSONPath expressions against JSON data with live results |
 
 ### Generators
 | Tool | Description |
@@ -78,6 +84,9 @@ Browser-based developer tools SPA. No backend — everything runs in the browser
 - **jQuery 3.x** — CDN
 - **Tailwind CSS 3.x** — CLI build
 - **jose 5.x** — ESM CDN (JWT/JWKS operations)
+- **sql-formatter 15.x** — ESM CDN (SQL formatting)
+- **bcryptjs 2.x** — ESM CDN (bcrypt hashing)
+- **jsonpath-plus 10.x** — ESM CDN (JSONPath evaluation)
 - **Web Crypto API** — Hashing, key generation, TOTP
 
 ## Development
