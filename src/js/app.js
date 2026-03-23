@@ -106,8 +106,8 @@ function buildToolIndex() {
   $('.nav-dropdown-item[data-tool]').each(function () {
     const $el = $(this);
     const id = $el.data('tool');
-    const label = $el.text().trim();
     const emoji = $el.find('span').first().text().trim();
+    const label = $el.text().trim().replace(emoji, '').trim();
 
     if (!tools.find(t => t.id === id)) {
       tools.push({ id, label, emoji });
