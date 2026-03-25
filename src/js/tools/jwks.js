@@ -15,6 +15,10 @@ async function generateRsaKeyPair() {
   privateJwk.use = 'sig';
   privateJwk.alg = 'RS256';
 
+  const kid = await jose.calculateJwkThumbprint(publicJwk);
+  publicJwk.kid = kid;
+  privateJwk.kid = kid;
+
   return { publicJwk, privateJwk };
 }
 
@@ -31,6 +35,10 @@ async function generateEcKeyPair() {
   publicJwk.alg = 'ES256';
   privateJwk.use = 'sig';
   privateJwk.alg = 'ES256';
+
+  const kid = await jose.calculateJwkThumbprint(publicJwk);
+  publicJwk.kid = kid;
+  privateJwk.kid = kid;
 
   return { publicJwk, privateJwk };
 }
