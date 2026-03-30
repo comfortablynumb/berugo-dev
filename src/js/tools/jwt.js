@@ -116,6 +116,11 @@ function initJwtVerifier() {
 }
 
 function initJwtGenerator() {
+  const now = Math.floor(Date.now() / 1000);
+  $('#jwt-generate-payload').val(
+    JSON.stringify({ sub: 'user123', iat: now, exp: now + 3600 }, null, 2)
+  );
+
   $('#jwt-generate-btn').on('click', async () => {
     const $error = $('#jwt-generate-error');
     const $output = $('#jwt-generate-output');

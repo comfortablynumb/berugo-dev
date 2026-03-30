@@ -43,8 +43,17 @@ async function generateEcKeyPair() {
   return { publicJwk, privateJwk };
 }
 
-function buildJwks(jwk) {
-  return { keys: [jwk] };
+function buildJwks(jwks) {
+  return { keys: jwks };
+}
+
+function clampKeyCount(val) {
+  const n = parseInt(val, 10);
+
+  if (isNaN(n) || n < 1) return 1;
+  if (n > 20) return 20;
+
+  return n;
 }
 
 export function initJwks() {
@@ -62,14 +71,16 @@ export function initJwks() {
   $('#jwks-generate-btn').on('click', async () => {
     clearState();
     const keyType = $('#jwks-key-type').val();
+    const count = clampKeyCount($('#jwks-key-count').val());
+    const generatePair = keyType === 'RSA' ? generateRsaKeyPair : generateEcKeyPair;
 
     try {
-      const { publicJwk, privateJwk } = keyType === 'RSA'
-        ? await generateRsaKeyPair()
-        : await generateEcKeyPair();
+      const pairs = await Promise.all(Array.from({ length: count }, () => generatePair()));
+      const publicJwks = pairs.map(p => p.publicJwk);
+      const privateJwks = pairs.map(p => p.privateJwk);
 
-      $publicOut.val(JSON.stringify(buildJwks(publicJwk), null, 2));
-      $privateOut.val(JSON.stringify(buildJwks(privateJwk), null, 2));
+      $publicOut.val(JSON.stringify(buildJwks(publicJwks), null, 2));
+      $privateOut.val(JSON.stringify(buildJwks(privateJwks), null, 2));
       $('#jwks-result').removeClass('hidden');
     } catch (e) {
       $error.text('Key generation failed: ' + e.message).removeClass('hidden');
